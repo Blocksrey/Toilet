@@ -42,8 +42,8 @@ function Toilet:Flush()
 end
 
 function Toilet:Destroy()
-	self._contents = nil
-	self._queue    = nil
+	self.contents = nil
+	self._queue   = nil
 
 	setmetatable(self, nil)
 end
